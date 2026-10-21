@@ -1,0 +1,123 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 5px;
+padding: 15px;
+background-color: #f4f4f4;
+}
+/* Este es el estilo de la barrita de navegación */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+font-size: 22px;
+font-weight: bold;
+color: #2ECC71;
+}
+
+/* Este es el estilo de las opciones inicio de sesio, sobremi, enfoque y preguntas frecuentes */
+.navbar nav a{
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+}
+/* este es el boton de inicio de sesion en la barra de navegacion */
+.btn-login{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+}
+/* este es el boton de crear cuenta en la barra de navegacion */
+.btn-registro{
+    text-decoration: none;
+    background-color: #2ECC71;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.hero{
+    background-color: #1e272c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .hero-texto{
+    flex: 1;
+    text-align: left;
+ }
+ .hero-imagen{
+float: 1;
+text-align: center;
+ margin-right:200px; /*para mover la imagen hacia la izquierda */
+ }
+ .hero-imagen img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+     object-fit: cover;     /*para que la imagen no se deforme*/
+ }
+.hero h1{
+    color: #2ECC71;
+    font-size: 20px;
+    text-align: left;
+}
+.hero h2{
+    font-size: 32px;
+    margin: 10px 0;
+    text-align: left;
+}
+.hero p{
+    font-size: 20px;
+    font-style: italic;
+    color: #ccc;
+    text-align: left;
+}
+.btn-agenda{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #2ECC71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.seccion-columnas{
+    padding: 50px 20px;
+    text-align: center;
+}
+.seccion-columnas h2{
+    margin-bottom: 30px;
+    color: #333;
+   
+}
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin:  0 auto;
+    border-color: #1e272c;
+}
+.columna{
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd
+    flex: 1;
+    text-align: left;
+    }
+    .columna h3{
+        color: black;
+        margin-top: 0;
+    }
