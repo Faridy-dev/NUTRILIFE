@@ -270,3 +270,190 @@ text-align: center;
 }
 
 /* TERCER PÁGINA ENFOQUE NUTRICIONAL */
+<<<<<<< HEAD
+=======
+.contendor-enfoque{
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+.subtitulo-metodologia{
+    color: #2ECC71;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.titulo-principal{
+font-weight: bold;
+font-size: 20px;
+margin: 25px 0 10px 0;
+color: #1a1a1a;
+}
+
+.descripcion{
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* ESTILOS DE LAS TARJETITAS */
+.tabla-tarjetas{
+    width: 100%;
+    border-collapse: separate;
+     border-spacing: 20px;    /*separa las tarjetiras entre si */
+     margin-bottom: 30px;
+}
+/* TARJETITAS BLANCAS */
+.tarjeta-blanca{
+    width: 33.33%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    vertical-align: top;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+}
+.tarjeta-blanca h3{
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+    color: #1a1a1a;
+}
+.tarjeta-blanca p{
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.icono{
+    width: 35px;
+    height: 35px;
+    background-color: #e8f8f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ESTILOS TARJETITAS OSCURAS */
+.banner-oscuro{
+    background-color: #1e272c;
+    border-radius: 15px;
+    padding: 30px 20px;
+    color: #ffffff;
+}
+.banner-oscuro h2{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.tarjeta-oscura{
+    width: 33.33%;
+    background-color: #334155;
+    border-radius: 10px;
+    padding: 20px;
+    vertical-align: top;
+}
+.paso{
+    color: #27ae60;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.tarjeta-oscura p{
+    color: #cbd5e1;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* PAGINA DE PREGUNTAS FRECUENTES */
+>>>>>>> 46977d1d4c8003766dfaefd8cfdb6135f203073b
+
+/* ESTILO DE LA PAGINA "CREAR CUENTEA" */
+.form_CrearCuenta{
+    max-width: 600px;
+    margin: 0 auto;  /* CENTRA EL FORMULARIO HORIZONTALMENTE  */
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 12px #cee2d6
+}
+
+.encabezado{
+    text-align: center;
+    border-bottom: 4px solid #2ECC71;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+
+.campo-contrasena {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.campo-confirmarContrasena{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.campo-contrasena input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+}
+
+.campo-confirmarContrasena input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+}
+
+.campo-contrasena button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icono {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.campo-contrasena button:hover {
+    background-color: #eee;
+}
+
+
+.botonRegistrarse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 15px 20px;
+    margin: 20px auto;
+    background-color: #2ECC71;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botonRegistrarse:hover {
+    background-color: #27AE60;
+    transform: scale(1.03);
+}
