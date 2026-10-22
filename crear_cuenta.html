@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrilife</title>
+    <title>Crear cuenta Nutrilife</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,15 +21,83 @@
         </div>
     </header>
 
-    <main class="Form_CrearCuenta">
-        <header>
+    <main class="form_CrearCuenta">
+        <!-- ENCABEZADO -->
+        <header class="encabezado">
             <h1>Crear tu cuenta en Nutrilife</h1>
             <h3>Regístrate para comenzar a agregar tus consultas con la Lic. Brenda</h3>
         </header>
 
+        <!-- FORMULARIO PARA CREAR LA CUENTA -->
+        <form action="" method="get">
+            
+            <!-- CAMPO NOMBRE COMPLETO -->
+            <label for="Nombre">Nombre Completo :</label>
+            <br>
+            <input type="text" name="Nombre" id="Nombre" 
+                placeholder="Agrega tu nombre" 
+                required autofocus 
+                oninput="this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/g, '').toUpperCase()"> 
+                <!-- ↑↑↑ valida caracteres valios y convierte las letras de minuscula a mayuscula, respetando acentos -->
+            <br>
+            <br>
+            
+            <!-- CAMPO CORRERO ELECTRONICO -->
+            <label for="Correo">Correo Electrónico:</label>
+            <br>
+            <input type="email" name="Correo" id="Correo" 
+                placeholder="Ejemplo@gmail.com" 
+                required>
+            <br>
+            <br>
 
-    </main>
+            <!-- CAMPO TELEFONO -->
+            <label for="telefono">Teléfono o WhatsApp (Para recordatorios):</label>
+            <br>
+            <input type="tel" id="telefono" name="telefono" 
+                placeholder="Ej. 4491234567"
+                minlength="-10" 
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+                oninput="this.value=this.value.replace(/[^0-9]/g, '')">
+            <!-- ↑↑↑↑ valida los caracteres que entran y los "elimina" si no coinciden con el rango establecido -->
+            <br>
+            <br>
+            
+            <!-- CAMPO CONTRASEÑA -->
+            <label for="contrasena">Contraseña:</label>
+            <br>
+            <div class="campo-contrasena">
+                <input type="password" id="contrasena"
+                name="contrasena"
+                placeholder="Contraseña">
 
+            <button type="button" id="btnOjo"
+                aria-label="Mostrar contraseñas">
+                <svg id="iconoOjo" class="icono"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path id="dibujoOjo"
+                    d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+                    <circle id="pupila" cx="12" cy="12" r="3"/>
+                </svg>
+            </button>
+            </div>
+            <br>
 
+            <!-- CAMPO CONFIRMAR CONTRASEÑA -->
+            <label for="confirmarContrasena">Confirmar contraseña:</label>
+            <br>
+            <div class="campo-confirmarContrasena">
+                <input type="password" id="confirmarContrasena"
+                name="confirmarContrasena"
+                placeholder="Confirma tu contraseña">
+            </div>
+            <br>
+
+            <!-- BOTON ENVIAR -->
+            <button type="submit" class="botonRegistrarse"> Registrarse</button>
+
+<script src="js/script.js"></script>
 </body>
 </html>

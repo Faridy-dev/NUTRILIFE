@@ -149,9 +149,9 @@ text-align: center;
         color: white;
         padding: 40px 20px;
         display: flex;
-       flex-direction: column;
-       align-items: center;
-       text-align: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .foto-perfil p:first-child{
         width: 180px;
@@ -270,4 +270,3 @@ text-align: center;
 }
 
 /* TERCER PÁGINA ENFOQUE NUTRICIONAL */
->>>>>>> a0d48f7 (segundo commit)
