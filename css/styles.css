@@ -11,7 +11,9 @@ background-color: #f4f4f4;
     align-items: center;
     background-color: #ffffff;
     padding: 15px 50px;
+    border-radius: 8px;
     border-bottom: 1px solid #ddd;
+    margin: 20px;
 }
 
 .logo {
@@ -48,22 +50,23 @@ color: #2ECC71;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
 }
- .hero-texto{
+.hero-texto{
     flex: 1;
     text-align: left;
- }
- .hero-imagen{
+}
+.hero-imagen{
 float: 1;
 text-align: center;
  margin-right:200px; /*para mover la imagen hacia la izquierda */
- }
- .hero-imagen img{
+}
+.hero-imagen img{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-     object-fit: cover;     /*para que la imagen no se deforme*/
- }
+    object-fit: cover;     /*para que la imagen no se deforme*/
+}
 .hero h1{
     color: #2ECC71;
     font-size: 20px;
@@ -99,7 +102,7 @@ text-align: center;
 .seccion-columnas h2{
     margin-bottom: 30px;
     color: #333;
-   
+
 }
 .contenedor-flex{
     display: flex;
@@ -113,11 +116,11 @@ text-align: center;
     background-color: white;
     padding: 25px;
     border-radius: 8px;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
     flex: 1;
     text-align: left;
-    }
-    .columna h3{
+}
+.columna h3{
         color: black;
         margin-top: 0;
-    }
+}
