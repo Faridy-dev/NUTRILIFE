@@ -302,6 +302,7 @@ color: #1a1a1a;
      border-spacing: 20px;    /*separa las tarjetiras entre si */
      margin-bottom: 30px;
 }
+/* TARJETITAS BLANCAS */
 .tarjeta-blanca{
     width: 33.33%;
     background-color: white;
@@ -361,4 +362,4 @@ color: #1a1a1a;
     margin: 0;
 }
 
-/* SECCION DE PREGUNTAS FRECUENTES */
+/* PAGINA DE PREGUNTAS FRECUENTES */
