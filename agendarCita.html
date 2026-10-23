@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar cita</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- //ESTA ES LA BARRA DE NAVEGACIÓN -->
+        <header class="navbar">
+        <div class ="logo">Nutrilife </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Mí</a>
+            <a href="#">Enfoque</a>
+            <a href="#">Agendar cita</a>
+            <a href="#">Mis citas</a>
+            <a href="#">Preguntas Frecuentes</a>
+        </nav>
+        <div>
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+            <a href="#"  class="btn-registro">Crear Cuenta</a>
+        </div>
+    </header>
+
+
+<section class="contenedorCita">
+    <p class="tituloCita">
+        Agendar cita con tu nutrióloga
+    </p>
+    <p class="subtituloCita">
+        Lic. Brenda Segovia - Selecciona la fecha y hora de tu consulta
+    </p>
+    <div class="contenidoCita">
+        <!-- FORMULARIO DE LA IZQUIERDA -->
+        <main class="form_AgendarCita">
+            <h3>1. Selecciona Fecha y Hora</h3>
+            <div class="mesCalendario">
+                <button type="button" class="flechaMes">&lsaquo;</button>
+                <strong>Octubre 2026</strong>
+                <button type="button" class="flechaMes">&rsaquo;</button>
+            </div>
+            <div class="diasCalendario">
+                <button type="button" class="dia deshabilitado">
+                    <span>LUN</span><strong>5</strong>
+                </button>
+                <button type="button" class="dia deshabilitado">
+                    <span>MAR</span><strong>6</strong>
+                </button>
+                <button type="button" class="dia seleccionado">
+                    <span>MIÉ</span><strong>7</strong>
+                </button>
+                <button type="button" class="dia">
+                    <span>JUE</span><strong>8</strong>
+                </button>
+                <button type="button" class="dia">
+                    <span>VIE</span><strong>9</strong>
+                </button>
+                <button type="button" class="dia">
+                    <span>SÁB</span><strong>10</strong>
+                </button>
+                <button type="button" class="dia deshabilitado">
+                    <span>DOM</span><strong>11</strong>
+                </button>
+            </div>
+            <p class="etiquetaHorario">
+                Horarios disponibles para el Miércoles 7 de Octubre:
+            </p>
+            <div class="horarios">
+                <button type="button" class="hora">09:00 AM</button>
+                <button type="button" class="hora seleccionado">
+                    11:00 AM
+                </button>
+                <button type="button" class="hora deshabilitado">
+                    04:00 PM (Ocupado)
+                </button>
+                <button type="button" class="hora">05:30 PM</button>
+            </div>
+            <h3>2. Selecciona la Modalidad</h3>
+            <div class="modalidades">
+                <button type="button" class="modalidad seleccionado">
+                    <span class="iconoModalidad">💻</span>
+                    <span>
+                        <strong>En Línea (Videollamada)</strong>
+                        <small>Enlace de acceso por correo y WhatsApp</small>
+                    </span>
+                </button>
+
+                <button type="button" class="modalidad">
+                    <span class="iconoModalidad">🏥</span>
+                    <span>
+                        <strong>Presencial (Consultorio)</strong>
+                        <small>Atención directa en clínica NutriLife</small>
+                    </span>
+                </button>
+
+            </div>
+
+            <h3>3. Motivo de Consulta / Observaciones</h3>
+
+            <textarea
+                class="observaciones"
+                placeholder="Escribe brevemente tu objetivo o si es tu primera cita de valoración..."
+            ></textarea>
+
+            <button type="button" class="btnConfirmar">
+                Confirmar y Agendar Cita
+            </button>
+
+        </main>
+
+        <!-- RESUMEN DE LA DERECHA -->
+        <aside class="resumenCita">
+
+            <h3>Resumen de tu Cita</h3>
+
+            <div class="perfilNutriologa">
+                <div class="avatarNutriologa">
+                    <img src="img/nutri.jpg" alt="Lic. Brenda Segovia" class="avarNutri">
+                </div>
+                <div>
+                    <strong>Lic. Brenda Segovia</strong>
+                    <span>Nutrición Clínica y Deportiva</span>
+                </div>
+            </div>
+
+            <div class="detalleCita">
+                <p>📅 <span>Fecha:</span>
+                    <strong>Miércoles, 7 de Octubre de 2026</strong>
+                </p>
+
+                <p>⏰ <span>Hora:</span>
+                    <strong>11:00 AM</strong>
+                </p>
+
+                <p>📍 <span>Modalidad:</span>
+                    <strong class="textoVerde">En Línea (Videollamada)</strong>
+                </p>
+            </div>
+
+            <div class="politicaCancelacion">
+                <strong>📌 Política de Cancelación:</strong>
+                <p>
+                    Podrás cancelar o reprogramar tu cita sin penalización
+                    hasta 24 horas antes de la consulta.
+                </p>
+            </div>
+        </aside>
+    </div>
+</section>
+</body>
+</html>
