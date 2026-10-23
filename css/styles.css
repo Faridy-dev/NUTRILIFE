@@ -445,6 +445,9 @@ margin: 25px;
     white-space: nowrap;
     cursor: pointer;
 }
+
+/*********************************************LEO**********************************************************************/
+
 /* ESTILO DE LA PAGINA "CREAR CUENTEA" */
 .form_CrearCuenta{
     max-width: 600px;
@@ -536,9 +539,7 @@ margin: 25px;
 }
 
 
-/*********************************************LEO**********************************************************************/
-
-/* ESTILO DE AGENDAR CITA */
+/******************************************* ESTILO DE AGENDAR CITA *********************************************/
 .contenedorCita {
     max-width: 1250px;
     margin: 25px auto;
@@ -569,7 +570,7 @@ margin: 25px;
 }
 
 /* TARJETAS PRINCIPALES */
-.form_AgendarCita,
+.form_Cita,
 .resumenCita {
     background-color: #ffffff;
     padding: 30px;
@@ -845,31 +846,168 @@ margin: 25px;
     line-height: 1.5;
 }
 
-/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
-@media (max-width: 850px) {
-    .contenidoCita {
-        grid-template-columns: 1fr;
-    }
+
+/***************************************** ESTILO DE MIS CITAS ***************************************/
+.nutrioloCita{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #f6f7f8;
+    padding: 26px;
+    border-radius: 10px;
+    margin-bottom: 18px;
 }
 
-@media (max-width: 550px) {
-    .contenedorCita {
-        padding: 0 12px;
-    }
-    .form_AgendarCita,
-    .resumenCita {
-        padding: 18px;
-    }
+.nutrioloCita b {
+    font-size: 25px;
+    margin-bottom: 4px;
+}
 
-    .diasCalendario {
-        gap: 4px;
-    }
+.nutrioloCita span {
+    font-size: 15px;
+    color: #16bf60;
+}
+.nutrioloCita img{
+    width: 80px;
+    height: 80px;
+}
 
-    .horarios {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+.datosCita {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
 
-    .modalidades {
-        grid-template-columns: 1fr;
-    }
+.infoCita {
+    flex: 1;
+    min-width: 0;
+    display: block;
+    background-color: #F9FAFB;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.infoCita b,
+.infoCita strong {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.infoCita strong {
+    color: #16bf60;
+}
+
+.infoCita span {
+    font-size: 11px;
+    color: #6B7280;
+}
+
+
+/* BOTONES DE MI CITA  */
+.btnMisCitas {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btnUnirseVideollamada{
+    flex: 2;
+    padding: 14px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnUnirseVideollamada:hover {
+    background-color: #27ae60;
+}
+
+.btnCancelarCita{
+    flex: 1;
+    padding: 14px;
+    background-color: #e53e3ebc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnCancelarCita:hover{
+    background-color: #E53E3E;
+}
+
+.advertenciaCancelacion{
+    font-size: 15px;
+    margin: 6% 0;
+}
+
+.advertenciaCancelacion b{
+    color: #E67E22;
+}
+
+/* PANEL DE INDICACIONES */
+.panelIndicaciones {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.panelIndicaciones h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #273238;
+}
+
+.panelIndicaciones ul {
+    padding-left: 22px;
+    margin-bottom: 25px;
+}
+
+.panelIndicaciones li {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.recordatorios {
+    background-color: #f0fdf4;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #16bf60;
+}
+
+.recordatorios strong {
+    color: #166534;
+    font-size: 14px;
+}
+
+.recordatorios p {
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.btnAgendarNuevaCita{
+    width: 60%;
+    padding: 14px;
+    background-color: #000000ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2%;
 }
