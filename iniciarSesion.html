@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- //ESTA ES LA BARRA DE NAVEGACIÓN -->
+
+    <div id="navbar-placeholder"></div>
+
+    <!-- SECCION PARA CREAR CUENTA -->
+    <main class="form_CrearCuenta">
+        <!-- ENCABEZADO -->
+        <header class="encabezado">
+            <h1>Crear tu cuenta en Nutrilife</h1>
+            <h3>Regístrate para comenzar a agregar tus consultas con la Lic. Brenda</h3>
+        </header>
+
+        <!-- FORMULARIO PARA CREAR LA CUENTA -->
+        <form action="" method="get">
+            
+            <!-- CAMPO CORRERO ELECTRONICO -->
+            <label for="Correo">Correo Electrónico</label>
+            <br>
+            <input type="email" name="Correo" id="Correo" 
+                placeholder="Ejemplo@gmail.com" 
+                required>
+            <br>
+            <br>
+            
+            <!-- CAMPO CONTRASEÑA -->
+            <label for="contrasena">Contraseña:</label>
+            <br>
+            <div class="campo-contrasena">
+                <input type="password" id="contrasena"
+                name="contrasena"
+                placeholder="Contraseña">
+
+            <button type="button" id="btnOjo"
+                aria-label="Mostrar contraseñas">
+                <svg id="iconoOjo" class="icono"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path id="dibujoOjo"
+                    d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+                    <circle id="pupila" cx="12" cy="12" r="3"/>
+                </svg>
+            </button>
+            </div>
+            <br>
+            <!-- BOTON ENVIAR -->
+            <button type="submit" class="botonRegistrarse"> Iniciar Sesión</button>
+            
+            <div class="pregunta">
+                <p>
+                ¿No tienes cuenta? 
+                </p>
+                <a href="crearCuenta.html">Regístrarse</a>
+            </div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1039,3 +1039,22 @@ margin: 25px;
         grid-template-columns: 1fr;
     }
 }
+
+/*************** Estilo pagina Iniciar Sesión   ***************/
+.pregunta{
+    
+    text-align: center;
+    border-bottom: 4px solid #2ECC71;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.pregunta a {
+    color: #2ECC71;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pregunta a:hover {
+    text-decoration: underline;
+}
