@@ -1011,3 +1011,31 @@ margin: 25px;
     cursor: pointer;
     margin: 2%;
 }
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+@media (max-width: 850px) {
+    .contenidoCita {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedorCita {
+        padding: 0 12px;
+    }
+    .form_AgendarCita,
+    .resumenCita {
+        padding: 18px;
+    }
+
+    .diasCalendario {
+        gap: 4px;
+    }
+
+    .horarios {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .modalidades {
+        grid-template-columns: 1fr;
+    }
+}
