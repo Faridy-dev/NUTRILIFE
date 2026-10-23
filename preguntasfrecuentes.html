@@ -3,79 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas Frecuentes-Nutrilife</title>
+    <title>Preguntas Frecuentes - Nutrilife</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <div id="navbar-placeholder"></div>
-    <section class="contenedor-preguntas">
-        <p class="subtitulo-centro"> CENTRO DE AYUDA</p>
-        <h1 class="titulo-principal">Preguntas Frecuentes</h1>
-        <p class="descripcion1">Encuentra respuestas inmediatas sobre tus citas, horarios y cancelaciones</p>
-    </section>
-          
-        <div class="contenedor-1 onclick="toggleFaq(this)">
-            <div class="faq-header">
-                <h3>¿Como puedo agendar una cita con la Lic. Brenda?</h3> 
-                <span class="flecha">v</span>
-             </div>
-            <div class="faq-content">   
-            <p>Solo necesitas crear una cuenta de paciente, seleccionar el apartado de agendar cita, elegir fecha, el horario disponible y la  modalidad de tu preferencia (en línea o presencial). El sistema bloquerá  tu espacio en automático</p>
+
+    <!-- Contenedor general en dos columnas para aprovechar el espacio -->
+    <div class="faq-layout-principal">
+
+        <!-- COLUMNA IZQUIERDA: Títulos, Descripción e Ilustración -->
+        <div class="columna-izquierda">
+            <section class="contenedor-preguntas">
+                <p class="subtitulo-centro">CENTRO DE AYUDA</p>
+                <h1 class="titulo-principal">Preguntas Frecuentes</h1>
+                <p class="descripcion1">Encuentra respuestas inmediatas sobre tus citas, horarios y cancelaciones</p>
+            </section>
+
+            <!-- Imagen ilustrativa sugerida por la maestra para aprovechar el espacio -->
+            <div class="imagen-ilustrativa">
+                <img src="img/ayuda.png" alt="Soporte Nutrilife">
             </div>
-        </div>
         </div>
 
-        <div class="contenedor-2 onclick="toggleFaq(this)">
-            <div class="faq-header">
-            <h3>¿Con cuanto tiempo de anticipación puedo cancelar mi cita?</h3>
-            <span class="flecha">v</span>
-             </div>
-             <div class="faq-content">
-                <p></p>
-             </div>
-        </div>
+        <!-- COLUMNA DERECHA: Las preguntas desplegables más compactas -->
+        <div class="columna-derecha">
+
+            <div class="contenedor-faq" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <h3>¿Cómo puedo agendar una cita con la Lic. Brenda?</h3> 
+                    <span class="flecha">v</span>
+                </div>
+                <div class="faq-content">   
+                    <p>Solo necesitas crear una cuenta de paciente, seleccionar el apartado de agendar cita, elegir la fecha, el horario disponible y la modalidad de tu preferencia (en línea o presencial). El sistema bloqueará tu espacio en automático.</p>
+                </div>
+            </div>
+
+            <div class="contenedor-faq" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <h3>¿Con cuánto tiempo de anticipación puedo cancelar mi cita?</h3>
+                    <span class="flecha">v</span>
+                </div>
+                <div class="faq-content">
+                    <p>Puedes cancelar o reprogramar tu cita con al menos 24 horas de anticipación desde tu panel de paciente.</p>
+                </div>
+            </div>
+
+            <div class="contenedor-faq" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <h3>¿Qué pasa si intento cancelar con menos de 25 horas?</h3>
+                    <span class="flecha">v</span>
+                </div>
+                <div class="faq-content"> 
+                    <p>Las cancelaciones realizadas fuera de tiempo se considerarán como cita efectuada y no podrán ser reembolsadas ni reagendadas sin costo.</p>
+                </div>
+            </div>
+
+            <div class="contenedor-faq" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <h3>¿Cómo funcionan los recordatorios de mis consultas?</h3>
+                    <span class="flecha">v</span>
+                </div>
+                <div class="faq-content"> 
+                    <p>El sistema te enviará una notificación automática y un correo electrónico 24 horas antes y 1 hora antes de tu consulta programada.</p>
+                </div>
+            </div>
+
+            <div class="contenedor-faq" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <h3>¿Las consultas son presenciales o en línea?</h3>
+                    <span class="flecha">v</span>
+                </div>
+                <div class="faq-content"> 
+                    <p>Ofrecemos ambas modalidades para adaptarnos a tus necesidades. Puedes elegir presencial en el consultorio o virtual mediante videollamada.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="contenedor-3 onclick="toggleFaq(this)">
-            <div class="faq-header">
-            <h3>¿Que pasa si intento cancelar con menos de 25 horas?</h3>
-            <span class="flecha">v</span>
-            </div>
-            <div class="faq-content"> 
-                <p></p>
-            </div>
-        </div>
-        </div>
-
-        <div class="contenedor-4 onclick="toggleFaq(this)">
-            <div class="faq-header">
-            <h3>¿Cómo funcionana los recordatorios de mis consultas?</h3>
-            <span class="flecha">v</span>
-            </div>
-            <div class="faq-content"> 
-                <p></p>
-            </div>
-        </div>
-        </div>
-
-         <div class="contenedor-5 onclick="toggleFaq(this)">
-            <div class="faq-header">
-            <h3>¿Las condultas son presenciales o en línea?</h3>
-            <span class="flecha">v</span>
-            <div class="faq-content"> 
-                <p></p>
-            </div>
-        </div>
     </div>
 
-         <div class="banner-negro">
-            <div> 
+    <!-- Banner inferior de duda adicional (Abarca todo el ancho abajo) -->
+    <div class="banner-negro">
+        <div> 
             <h3>¿Tienes alguna duda adicional?</h3>
-            <p>Comunicate directamente con la clinica o agenda tu consulta para resolverla de forma personalizada</p>
-            </div>
-         <button class="boton-Agendar-ahora">Agendar cita ahora</button>
+            <p>Comunícate directamente con la clínica o agenda tu consulta para resolverla de forma personalizada</p>
         </div>
+         <a href="agendarCita.html" class="boton-Agendar">Agendar cita</a>
        
     <script src="js/script.js"></script>
 </body>

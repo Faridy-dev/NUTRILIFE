@@ -256,7 +256,7 @@ text-align: center;
 .cajas-informacion ul li{
     font-size: 20px;
     color: #666;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 /* DISEÑO DEL BOTON AGREGAR */
@@ -265,10 +265,11 @@ text-align: center;
     font-size: 25px;
     text-decoration: none;
     background-color: #2ECC71;
-    color: white;
+    color: rgb(241, 239, 239);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
+    width: fit-content;   
 }
 
 /* TERCER PÁGINA ENFOQUE NUTRICIONAL */
@@ -368,36 +369,80 @@ margin: 25px;
     margin: 0;
 }
 
-/* PAGINA DE PREGUNTAS FRECUENTES */
-.contenedor-preguntas{
-    max-width: 800px;
-    margin: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+.faq-layout-principal {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
+
+.columna-izquierda {
+    flex: 1;
+}
+
+.columna-derecha {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio uniforme entre cajitas */
+}
+
+.contenedor-preguntas{
+    max-width: 100%;
+    margin: 0 0 20px 0;
+}
+
 .subtitulo-centro{
     color: #27ae60;
     font-weight: bold;
-    margin: 25px;  
+    margin: 0 0 10px 0;  
+    font-size: 14px;
+    letter-spacing: 1px;
 }
+
 .titulo-principal{
+    font-size: 35px;
+    margin: 0 0 15px 0;
+    color: #1a1a1a;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
 }
+
 .descripcion1{
     color: #666666;
-    margin: 25px;
-    font-size: 20px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
-.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5 {
+
+/* Imagen ilustrativa en la columna izquierda */
+.imagen-ilustrativa {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.imagen-ilustrativa img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Cajitas de preguntas más compactas y estéticas */
+.contenedor-faq {
     background-color: white;
-    border-radius: 20px;
-    padding: 30px 20px;
+    border-radius: 12px;
+    padding: 18px 20px;
     color: #1a1a1a;
-    margin: 25px auto;
-    max-width: 1800px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    border: 1px solid #eaeaea;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+.contenedor-faq:hover {
+    border-color: #27ae60;
+}
+
 .faq-header {
     display: flex;
     justify-content: space-between;
@@ -406,44 +451,78 @@ margin: 25px;
 
 .faq-header h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
+    color: #2c3e50;
 }
 
 .flecha {
-    color: #2ECC71;
+    color: #27ae60;
     font-weight: bold;
+    transition: transform 0.2s ease;
 }
 
 .faq-content {
     display: none;
-    margin-top: 15px;
+    margin-top: 12px;
     color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
 }
 
+.imagen-ilustrativa {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.imagen-ilustrativa img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+/* Banner inferior */
 .banner-negro{
-    background-color:#1e272c;
-    border-radius: 20px;
-    padding: 30px 20px;
+    background-color: #1e272c;
+    border-radius: 15px;
+    padding: 25px 30px;
     color: #ccc;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px; 
     display: flex;
     justify-content: space-between;  
     align-items: center;
-    max-width: 1800px;
-    margin: 25px auto;   
+    max-width: 1260px;
+    margin: 40px auto;   
+}
+
+.banner-negro h3 {
+    color: white;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.banner-negro p {
+    margin: 0;
+    font-size: 14px;
 }
 
 .boton-Agendar-ahora{
-    font-size: 25px;
+    font-size: 16px;
     text-decoration: none;
-    background-color: #2ECC71;
+    background-color: #27ae60;
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 12px 22px;
+    border-radius: 8px;
     font-weight: bold;
+    border: none;
     white-space: nowrap;
     cursor: pointer;
+}
+
+.boton-Agendar-ahora:hover {
+    background-color: #219653;
 }
 
 /*********************************************LEO**********************************************************************/
