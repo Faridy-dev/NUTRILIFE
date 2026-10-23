@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisCistas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+     <!-- //ESTA ES LA BARRA DE NAVEGACIÓN -->
+        <header class="navbar">
+        <div class ="logo">Nutrilife </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Mí</a>
+            <a href="#">Enfoque</a>
+            <a href="#">Agendar cita</a>
+            <a href="#">Mis citas</a>
+            <a href="#">Preguntas Frecuentes</a>
+        </nav>
+        <div>
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+            <a href="#"  class="btn-registro">Crear Cuenta</a>
+        </div>
+    </header>
+
+    <section class="contenedorCita">
+    <p class="tituloCita">
+        Panel de Citas Clínicas
+    </p>
+    <p class="subtituloCita">
+        Consulta el estado de tu prócima cita o agenda una nueva consulta de seguimiento
+    </p>
+    <div class="contenidoCita">
+    <!-- PANEL DE LA IZQUIERDA -->
+        <main class="form_Cita">
+            <h3>Tu Próxima Cita Activa</h3>
+            <div class="nutrioloCita">
+                <div class="avatarNutriologa">
+                    <img src="img/nutri.jpg" alt="Lic. Brenda Segovia" class="avarNutri">
+                </div>
+                <div>
+                    <b>Lic. Brenda Segovia</b>
+                    <br>
+                    <span>Nutrición Clínica y Deportiva</span>
+                </div>
+            </div>
+            
+            <div class="datosCita">
+                <div class="infoCita">
+                    <span>FECHA PROGRAMADA</span>
+                    <br>
+                    <b>Mié, 7 Oct 2026</b>
+                </div>
+                <div class="infoCita">
+                    <span>HORA DE CONSULTA</span>
+                    <br>
+                    <b>11:00 AM (45min)</b>
+                </div>
+                <div class="infoCita">
+                    <span>MODALIDAD</span>
+                    <br>
+                    <strong>💻 En Línea</strong>
+                </div>
+            </div>
+            <div class="btnMisCitas">
+                <button class="btnUnirseVideollamada"> Unirse a la Videollamada</button>
+                <button class="btnCancelarCita"> Cancelar Cita</button>
+            </div>
+
+            <div class="advertenciaCancelacion">
+                <p>
+                    ℹ️ Puedes cancelar o reprogramar esta cita sin penalización hasta 24 horas antes del horario programado.
+                </p>
+                <b>Límite de cancelación: Martes 6 de Octubre a las 11:00 AM.</b>
+            </div>
+        </main>
+
+        
+        <!-- SEGUNDO PANEL: INDICACIONES -->
+        <aside class="panelIndicaciones">
+
+            <h3>Indicaciones para tu Consulta</h3>
+
+            <ul>
+                <li>Conéctate 5 minutos antes de tu horario.</li>
+                <li>Ten a la mano tus estudios clínicos o pesajes recientes.</li>
+                <li>Anota tus dudas principales sobre tu alimentación diaria.</li>
+            </ul>
+
+            <div class="recordatorios">
+                <strong>📩 Recordatorios Programados:</strong>
+                <p>
+                    Recibirás alertas por WhatsApp 24h antes y el día de la cita.
+                </p>
+            </div>
+
+            </aside>
+    </div>       
+    <button class="btnAgendarNuevaCita">
+        + Agendar Nueva Cita
+    </button>
+
+</body>
+</html>
