@@ -270,8 +270,8 @@ text-align: center;
 }
 
 /* TERCER PÁGINA ENFOQUE NUTRICIONAL */
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
+======= */
 .contendor-enfoque{
     max-width: 1000px;
     margin: 40px auto;
@@ -283,6 +283,7 @@ text-align: center;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 5px;
+    margin: 25px;
 }
 
 .titulo-principal{
@@ -290,12 +291,14 @@ font-weight: bold;
 font-size: 20px;
 margin: 25px 0 10px 0;
 color: #1a1a1a;
+margin: 25px;
 }
 
 .descripcion{
     color: #666666;
     font-size: 20px;
     margin-bottom: 30px;
+    margin: 25px;
 }
 /* ESTILOS DE LAS TARJETITAS */
 .tabla-tarjetas{
@@ -339,6 +342,7 @@ color: #1a1a1a;
     border-radius: 15px;
     padding: 30px 20px;
     color: #ffffff;
+    margin: 25px;
 }
 .banner-oscuro h2{
     font-size: 25px;
@@ -365,8 +369,83 @@ color: #1a1a1a;
 }
 
 /* PAGINA DE PREGUNTAS FRECUENTES */
->>>>>>> 46977d1d4c8003766dfaefd8cfdb6135f203073b
+/* >>>>>>> 46977d1d4c8003766dfaefd8cfdb6135f203073b */
+.contenedor-preguntas{
+    max-width: 800px;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+.subtitulo-centro{
+    color: #27ae60;
+    font-weight: bold;
+    margin: 25px;  
+}
+.titulo-principal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.descripcion1{
+    color: #666666;
+    margin: 25px;
+    font-size: 20px;
+}
+.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #1a1a1a;
+    margin: 25px auto;
+    max-width: 1800px;
+    cursor: pointer;
+}
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.faq-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.flecha {
+    color: #2ECC71;
+    font-weight: bold;
+}
+
+.faq-content {
+    display: none;
+    margin-top: 15px;
+    color: #555;
+}
+
+.banner-negro{
+    background-color:#1e272c;
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    max-width: 1800px;
+    margin: 25px auto;   
+}
+
+.boton-Agendar-ahora{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #2ECC71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
 /* ESTILO DE LA PAGINA "CREAR CUENTEA" */
 .form_CrearCuenta{
     max-width: 600px;
